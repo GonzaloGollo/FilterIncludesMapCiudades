@@ -76,38 +76,28 @@ const cities = [
   }
 ];
 
-
-
-
-
-
 function App() {
   return (
     <div className="App">
       <React.Fragment>
-      <div className="distribucion-contenido-card">
-        {cities.filter(ciudad => ciudad.country.includes("AR")).map((ciudad)=>{ return(
-          <div className="card-espacio" style={{backgroundColor:(ciudad.color)}}>
-            <li key={ciudad.id}>
-              <h3>Id:{ciudad.id }</h3> 
-              <p>Ciudad: {ciudad.city }</p>
-              <p  style={{fontSize:(ciudad.country=="AR"? 40 : 10)}}>Pais:{ciudad.country=="AR"?"Argentina":"Brasil"}</p>
-              <p>Poblacion:{ciudad.population }</p>
-              <p>Color:{ciudad.color }</p>
-            </li>
-            </div>
-            );
-        }
-        )
-        }
-                </div>
-
+        <div className="distribucion-contenido-card">
+          {cities.filter(ciudad => ciudad.country.includes("AR")).map((ciudad)=>{ return(
+            <div className="card-espacio" style={{backgroundColor:(ciudad.color)}}>
+              <li key={ciudad.id}>
+                <h3>Id:{ciudad.id }</h3> 
+                <p>Ciudad: {ciudad.city }</p>
+                <p  style={{fontSize:(ciudad.country=="AR"? 40 : 10)}}>Pais:{ciudad.country=="AR"?"Argentina":"Brasil"}</p>
+                <p>Poblacion:{ciudad.population }</p>
+                <p>Color:{ciudad.color }</p>
+              </li>
+              </div>
+              );
+              }
+            )
+          }
+        </div>
       </React.Fragment>
     </div>
   )
 }
- 
-
-
-
 export default App
