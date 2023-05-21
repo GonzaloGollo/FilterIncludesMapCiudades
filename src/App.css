@@ -5,6 +5,7 @@
   padding: 2rem;
   text-align: center;
   font-size: 20px;
+  font-family: 'Roboto', sans-serif;
   font-weight: 100;
   color: aliceblue;
 }
@@ -23,6 +24,14 @@
   margin: 1rem; 
   box-shadow: 3px 4px 4px rgba(1, 10, 30, 0.06);
   align-self: stretch;
+}
+
+p{
+  font-size: 1,5rem;
+}
+
+h3{
+  font-size: 2rem;
 }
 
 .logo {
